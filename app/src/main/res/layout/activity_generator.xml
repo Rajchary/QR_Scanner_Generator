@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Generator"
+    android:background="@color/purple_100">
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="228dp"
+        android:layout_height="101dp"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:gravity="start|top"
+        android:hapticFeedbackEnabled="true"
+        android:hint="@string/give_some_text_here"
+        android:textColorHint="@color/grey_400"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/generator"
+        android:layout_width="299dp"
+        android:layout_height="84dp"
+        android:background="@drawable/custom_button_generate_activity"
+        android:drawableEnd="@drawable/ic_baseline_qr_code_24"
+        android:fontFamily="@font/aclonica"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="0dp"
+        android:text="@string/generate"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <ImageButton
+        android:id="@+id/goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_navy_64"
+        android:contentDescription="@string/g" />
+
+    <EditText
+        android:id="@+id/imageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="@string/name_of_image"
+        android:textColorHint="@color/grey_400"
+        android:inputType="textPersonName"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        android:autofillHints="" />
+</androidx.constraintlayout.widget.ConstraintLayout>

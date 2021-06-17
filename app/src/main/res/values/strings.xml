@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QrGeneratorAndScanner</string>
+    <string name="generate">Generate</string>
+    <string name="scan">Scan</string>
+    <string name="give_some_text_here">Give some text here</string>
+    <string name="download">Download</string>
+    <string name="go_back">Go Back</string>
+    <string name="name_of_image">Name of image</string>
+    <string name="g">GoBack</string>
+    <string name="qr_code_found">QR Code Found</string>
+    <string name="copy">Copy</string>
+
+</resources>
