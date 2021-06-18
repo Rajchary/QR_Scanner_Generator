@@ -5,7 +5,9 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
-
+    lintOptions{
+        disable 'Deprecation'
+    }
     defaultConfig {
         applicationId "com.curiosity.qrgeneratorandscanner"
         minSdkVersion 27

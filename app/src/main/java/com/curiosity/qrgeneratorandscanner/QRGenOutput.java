@@ -5,17 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.Arrays;
 
 public class QRGenOutput extends AppCompatActivity {
     ImageView qrOutput;
@@ -40,18 +39,14 @@ public class QRGenOutput extends AppCompatActivity {
             startActivity(goBack);
         });
 
-        download.setOnClickListener(v ->{
-            saveImageToGallery();
-        });
+        download.setOnClickListener(v -> saveImageToGallery());
     }
     private void saveImageToGallery(){
-        //BitmapDrawable bitmapDrawable = (BitmapDrawable)qrOutput.getDrawable();
         try{
             MainActivity ma = new MainActivity();
             ma.checkAndRequestPermission();
         }catch(Exception e){
-
-            Log.e("Object",e.getStackTrace().toString());
+            Log.e("Object", Arrays.toString(e.getStackTrace()));
         }
         FileOutputStream outputStream = null;
         File file = Environment.getExternalStorageDirectory();

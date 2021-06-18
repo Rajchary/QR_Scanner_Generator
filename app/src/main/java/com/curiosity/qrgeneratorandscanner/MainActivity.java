@@ -33,31 +33,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(generateQr);
         });
         scan.setOnClickListener(v -> {
-//            IntentIntegrator intentIntegrator = new IntentIntegrator(MainActivity.this);
-//            intentIntegrator.setPrompt("For flash use volume up key");
-//            intentIntegrator.setBeepEnabled(true);
-//            intentIntegrator.setOrientationLocked(true);
-//            intentIntegrator.setCaptureActivity(Capture.class);
-//            intentIntegrator.initiateScan();
             Intent scanHelper = new Intent(MainActivity.this,ScanHelper.class);
             startActivity(scanHelper);
         });
-    }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data)
-    {
-        super.onActivityResult(requestCode,resultCode,data);
-        IntentResult intentResult = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
-        if(intentResult.getContents()!=null)
-        {
-            Intent showResult = new Intent(MainActivity.this,Scanner.class);
-            showResult.putExtra("content",intentResult.getContents());
-            startActivity(showResult);
-        }
-        else
-        {
-            Toast.makeText(getApplicationContext(),"You haven't scanned anything",Toast.LENGTH_SHORT).show();
-        }
     }
     public void requestNeededPermissions() {
         if(ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this,

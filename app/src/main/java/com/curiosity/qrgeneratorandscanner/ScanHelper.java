@@ -29,6 +29,7 @@ public class ScanHelper extends AppCompatActivity {
     Button camera, galley;
     boolean cameraView = false;
 
+    @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
