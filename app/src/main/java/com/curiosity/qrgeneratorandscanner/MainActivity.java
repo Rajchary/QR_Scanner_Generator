@@ -33,12 +33,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(generateQr);
         });
         scan.setOnClickListener(v -> {
-            IntentIntegrator intentIntegrator = new IntentIntegrator(MainActivity.this);
-            intentIntegrator.setPrompt("For flash use volume up key");
-            intentIntegrator.setBeepEnabled(true);
-            intentIntegrator.setOrientationLocked(true);
-            intentIntegrator.setCaptureActivity(Capture.class);
-            intentIntegrator.initiateScan();
+//            IntentIntegrator intentIntegrator = new IntentIntegrator(MainActivity.this);
+//            intentIntegrator.setPrompt("For flash use volume up key");
+//            intentIntegrator.setBeepEnabled(true);
+//            intentIntegrator.setOrientationLocked(true);
+//            intentIntegrator.setCaptureActivity(Capture.class);
+//            intentIntegrator.initiateScan();
+            Intent scanHelper = new Intent(MainActivity.this,ScanHelper.class);
+            startActivity(scanHelper);
         });
     }
     @Override

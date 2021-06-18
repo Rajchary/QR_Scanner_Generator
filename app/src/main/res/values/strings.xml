@@ -9,5 +9,8 @@
     <string name="g">GoBack</string>
     <string name="qr_code_found">QR Code Found</string>
     <string name="copy">Copy</string>
+    <string name="logo">Logo</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
 
 </resources>
