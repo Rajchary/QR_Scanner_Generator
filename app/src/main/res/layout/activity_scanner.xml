@@ -17,7 +17,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/aclonica"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="@color/navy"
         android:textSize="18sp"
         android:textStyle="bold"
