@@ -1,4 +1,4 @@
-https://img.shields.io/github/issues/Rajchary/QR_Scanner_Generator 
+[![GitHub issues](https://img.shields.io/github/issues/Rajchary/QR_Scanner_Generator)](https://github.com/Rajchary/QR_Scanner_Generator/issues)  
 
 # QR_Scanner_Generator
 
