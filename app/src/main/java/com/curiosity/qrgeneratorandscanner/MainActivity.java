@@ -10,6 +10,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -17,7 +18,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
-    Button generate,scan;
+    Button generate,scan,aboutus;
     public static final int STORAGE_REQUEST = 100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         scan.setOnClickListener(v -> {
             Intent scanHelper = new Intent(MainActivity.this,ScanHelper.class);
             startActivity(scanHelper);
+        });
+        aboutus = findViewById(R.id.about_us);
+        aboutus.setOnClickListener(v -> {
+            Intent aboutUs = new Intent(MainActivity.this,AboutUs.class);
+            startActivity(aboutUs);
         });
     }
     public void requestNeededPermissions() {

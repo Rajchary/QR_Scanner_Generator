@@ -12,5 +12,11 @@
     <string name="logo">Logo</string>
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>
-
+    <string name="who_are_we">Who are we ?</string>
+    <string name="user_logo">logo</string>
+    <string name="curiosity">Curiosity</string>
+    <string name="curiosity_description">Wait wait I am not the one who explored mars that was another
+    Curiosity. We are more alike. But i explore the IT world instead🖥️.This Corp was found by Chary.I was named curiosity
+    because it is the reason for our present and the source of our future❤️.</string>
+    <string name="about_us">About Us</string>
 </resources>

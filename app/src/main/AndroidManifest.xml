@@ -4,7 +4,8 @@
     package="com.curiosity.qrgeneratorandscanner">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-feature android:name="android.hardware.camera.any" />
 
     <uses-permission
@@ -21,7 +22,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QrGeneratorAndScanner"
         tools:ignore="AllowBackup">
-        <activity android:name=".ScanHelper"></activity>
+        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".ScanHelper" />
         <activity android:name=".QRGenOutput" />
         <activity android:name=".Scanner" />
         <activity android:name=".Generator" />
