@@ -1,4 +1,4 @@
-[![GitHub issues](https://img.shields.io/github/issues/Rajchary/QR_Scanner_Generator)](https://github.com/Rajchary/QR_Scanner_Generator/issues)  
+[![GitHub issues](https://img.shields.io/github/issues/Rajchary/QR_Scanner_Generator)](https://github.com/Rajchary/QR_Scanner_Generator/issues)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Rajchary/QR_Scanner_Generator/blob/master/LICENSE)
 
 # QR_Scanner_Generator
 
